@@ -1,3 +1,32 @@
+
+## 知烛 · ZhiZhu
+
+**A Local-First Genealogy Management System for Chinese Clans**
+
+ZhiZhu is a privacy-first, fully offline family tree and clan management tool built specifically for Chinese genealogy. Unlike Western family tree software, ZhiZhu natively handles complex Chinese kinship structures—dual lineage adoption (过继), dual heirship (兼祧), matrilocal marriage (招婿入赘), and full female member records—as first-class data structures, not footnotes.
+
+**Why ZhiZhu?**
+
+Most genealogy tools either can't model Chinese clan relationships or force you to upload sensitive family data to the cloud. ZhiZhu does neither.
+
+- **100% Local Storage** — All data stays on your computer. No account, no cloud, no registration. Your clan data is your family's private asset.
+- **Built for Chinese Genealogy** — Native support for adoption, dual heirship, matrilocal marriage, and complete female lineage records. Every woman has a full name, origin, and story recorded.
+- **3D Stellar Map** — Powered by Three.js and ngraph force-directed engine. Visualize your entire clan as an interactive galaxy. Each person is a star. 100,000 nodes tested.
+- **Smart Zibei Management** — Multi-generation naming tables with automatic character assignment. No more manually fixing inconsistent generation names across branch submissions.
+- **Multi-Clan Project Management** — One database file per clan. Manage multiple clans, branches, and lineages independently.
+- **Universal Data Import** — Accepts data exported from any genealogy software. Auto-recognizes column names in Chinese and English variants.
+- **Traditional & Simplified Chinese** — Full UI language switching for users across different regions.
+
+**Tech Stack**
+
+Python · PySide6 · SQLite3 · Three.js · ngraph · D3.js · Inno Setup
+
+**License & Contact**
+
+This is closed-source software with compiled code protection.
+
+For inquiries or feedback, reach out via Zhihu or Baidu Tieba.
+
 ## 知烛宗族管理系统
 
 **知所从来，烛照其往。**
@@ -23,6 +52,10 @@
 **女性成员完整记录**
 
 贯彻"凡有姓名，皆可入谱"。女儿有全名有去向，媳妇有娘家有来处。底层关系模型不预设世系必从父姓，天然兼容母系族谱修撰需求。
+
+**繁简中文切换**
+
+支持繁体中文与简体中文界面一键切换，适配不同地区华人的使用习惯。
 
 **3D星系图**
 
