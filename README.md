@@ -16,6 +16,7 @@ Most genealogy tools either can't model Chinese clan relationships or force you 
 - **Multi-Clan Project Management** — One database file per clan. Manage multiple clans, branches, and lineages independently.
 - **Universal Data Import** — Accepts data exported from any genealogy software. Auto-recognizes column names in Chinese and English variants.
 - **Traditional & Simplified Chinese** — Full UI language switching for users across different regions.
+- **Hardware-Bound Encryption** — AES-256 with device-specific key binding. Not even the developer can decrypt your data. Export backup before switching devices.
 
 **Tech Stack**
 
@@ -84,6 +85,12 @@ For inquiries or feedback, reach out via Zhihu or Baidu Tieba.
 **PDF电子家谱一键导出**
 
 封面自定义，序言跋文可自撰。电子家谱零成本复制，发家族群人手一份。
+
+**系统级硬件绑定加密**
+
+数据库采用AES-256加密，密钥与当前设备的硬件指纹和用户账户绑定。换电脑、重装系统后，原有数据库文件无法解密——任何人包括开发者在内都无法绕过。数据主权真正归于用户自己。
+
+⚠️ 更换设备前，请务必导出备份。这是您唯一的数据迁移方式。
 
 
 ### 快速开始
