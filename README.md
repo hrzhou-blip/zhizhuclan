@@ -120,11 +120,8 @@ Python · PySide6 · SQLite3 · HTML / CSS / JavaScript · Three.js · Inno Setu
 在此基础上，针对中国宗族的多房系、多代际、过继兼祧双线展示等特殊需求做了定制化改造。
 
 
-### 许可与联系
+### 与联系
 
-本项目为闭源软件，源码已进行编译保护。
-
-如需帮助或反馈问题，可通过知乎、贴吧等渠道联系开发者。
-
+官网地址：www.zhizhuclan.con
 微信：zhizhuclan
 邮箱：zhizhuManager@163.com
