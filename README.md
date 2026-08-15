@@ -15,12 +15,13 @@ Most genealogy tools either can't model Chinese clan relationships or force you 
 
 - **100% Local Storage** — All data stays on your computer. No account, no cloud, no registration. Your clan data is your family's private asset.
 - **Built for Chinese Genealogy** — Native support for adoption, dual heirship, matrilocal marriage, and complete female lineage records. Every woman has a full name, origin, and story recorded.
-- **3D Stellar Map** — Powered by Three.js and ngraph force-directed engine. Visualize your entire clan as an interactive galaxy. Each person is a star. 100,000 nodes tested.
+- **3D Stellar Map** — 3D Stellar Map — Powered by Three.js and ngraph force-directed engine. Visualize your entire clan as an interactive galaxy. Each person is a star. Supports up to 100,000 nodes simultaneously rendered (up to 400,000 on high-end hardware). This is a visualization layer only; actual data capacity is governed by the storage engine.
 - **Smart Zibei Management** — Multi-generation naming tables with automatic character assignment. No more manually fixing inconsistent generation names across branch submissions.
 - **Multi-Clan Project Management** — One database file per clan. Manage multiple clans, branches, and lineages independently.
 - **Universal Data Import** — Accepts data exported from any genealogy software. Auto-recognizes column names in Chinese and English variants.
 - **Traditional & Simplified Chinese** — Full UI language switching for users across different regions.
 - **Hardware-Bound Encryption** — AES-256 with device-specific key binding. Not even the developer can decrypt your data. Export backup before switching devices.
+- **Actual storage:** SQLite single-file database, 1 million+ records per database, unlimited databases via multi-genealogy manager.
 
 **Tech Stack**
 
@@ -64,7 +65,7 @@ For inquiries or feedback, reach out via Zhihu or Baidu Tieba.
 
 **3D星系图**
 
-基于 Three.js + ngraph 力导向引擎。环形初始布局，支持聚拢排序、星座连线、直系连线高亮。十万节点压测通过。布局计算与渲染解耦，离线预处理 + WebGL 在线渲染。根据硬件性能最高能渲染40万个节点。
+基于 Three.js + ngraph 力导向引擎。环形初始布局，支持聚拢排序、星座连线、直系连线高亮。可视化层支持同屏渲染十万节点，高配硬件最高可渲染40万节点。布局计算与渲染解耦，离线预处理 + WebGL 在线渲染。
 
 **关系图谱**
 
@@ -80,7 +81,7 @@ For inquiries or feedback, reach out via Zhihu or Baidu Tieba.
 
 **多族谱分库管理**
 
-一个族谱一个独立数据库文件。同时管理多个祠堂、多个分支，各自独立备份与迁移。
+一个族谱一个独立 SQLite 数据库文件，单库支持百万级数据存储。多族谱管理器可管理多个数据库文件，数量不受软件限制，容量只受磁盘空间约束。人员列表采用虚拟滚动加载，全部族人可完整显示、搜索、筛选，数据量再大也不卡顿。同时管理多个祠堂、多个分支，各自独立备份与迁移。
 
 **兼容任意来源数据导入**
 
