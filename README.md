@@ -1,6 +1,10 @@
 
 ## 知烛 · ZhiZhu
 
+ZhiZhu was born in Shantou, China—a city with deep connections to overseas Chinese communities across Southeast Asia. It is both a genealogy tool and a bridge—helping Chinese diasporas find their ancestral roots, reconnect broken family lines, and trace the names that were once lost across generations.
+
+"Know where you came from, light the way forward."（知所从来，烛照其往）
+
 **A Local-First Genealogy Management System for Chinese Clans**
 
 ZhiZhu is a privacy-first, fully offline family tree and clan management tool built specifically for Chinese genealogy. Unlike Western family tree software, ZhiZhu natively handles complex Chinese kinship structures—dual lineage adoption (过继), dual heirship (兼祧), matrilocal marriage (招婿入赘), and full female member records—as first-class data structures, not footnotes.
