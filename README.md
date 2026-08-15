@@ -479,3 +479,5 @@
 访问官网下载安装包：[www.zhizhuclan.com](https://www.zhizhuclan.com)
 
 > 基于 SQLite + WebGL + PySide6 构建。
+
+## [English Version](README_EN.md)
