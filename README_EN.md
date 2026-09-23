@@ -88,9 +88,35 @@ Multi-generation naming tables with automatic character assignment. Set an ancho
 
 Full UI language switching. Overseas Chinese from Hong Kong, Taiwan, and Southeast Asia can use the interface in Traditional Chinese; mainland users can switch to Simplified.
 
-### PDF Export
+### Genealogy Typesetting Engine
 
-Custom cover, preface, postscript, and selectable export scope (full clan / branch / individual). Compact PDF generation under 1MB for easy sharing.
+Built-in automated typesetting engine. Enter your data, export a finished book.
+
+**Four Layout Styles**
+- **Biographical (行传)**: One person per card, most detailed
+- **European Lineage Chart (欧式世系图)**: One name per cell, horizontal layout, lineage at a glance
+- **Vertical-Bead Linked (垂珠连线版)**: Father-son connecting lines, modern visual style
+- **Su-style Traditional (苏式垂珠古法)**: Traditional vertical-bead format, full father-son connections, classical genealogy aesthetics
+
+**Typesetting Features**
+- Six paper sizes: A4 / A5 / Standard 16K / Large 16K / Standard 32K / Large 32K
+- Font size auto-scales with paper size; recommended persons per page auto-calculated
+- Kinship relations auto-translated: adoption, dual heirship, uxorilocal marriage, and fosterage automatically identified and marked
+- Dual-heirship members show separate spouses and children for each house; children grouped by mother
+- Left-opening or right-opening binding, per regional custom
+- Traditional ↔ Simplified Chinese output, one-click switch
+- Surname protection: prevents incorrect conversion (e.g., 余 not converted to 餘)
+- Auto-generated volume splits, name index, and cross-volume master index
+
+**Print-Ready Output**
+- Bleed lines, CMYK color mode, binding margins, crop marks
+- Traditional double-line page frames
+- Exported PDF can be sent directly to a print shop
+
+**One-Click Book Assembly**
+Cover (built-in template / custom image / none), preface, postscript, volume splits, name index, cross-volume index — the full skeleton from cover to index, assembled automatically.
+
+The typesetting engine shares ZhiZhu's core design principle: **you only manage the data; the engine handles the book.** No parameter tuning, no layout learning curve.
 
 ### Hardware-Bound Encryption
 
@@ -106,8 +132,22 @@ This is not a design flaw. It is a deliberate choice: your genealogy is your fam
 
 - **No data collection** — We do not collect, upload, or share any user data
 - **No servers** — We have no servers; we store nothing about you
-- **No lock-in** — Export your complete data to Excel, CSV, or JSON at any time, for free, without permission
+- **No lock-in** — Export your complete data to Excel, CSV, JSON, or GEDCOM at any time, for free, without permission. Compiled for a year and want to switch software? Export everything today. We do not build data cages.
 - **You are using software, not a platform**
+
+### Distributed Compilation, Unified Import
+
+Compiling a large clan genealogy is inherently a multi-person effort — each branch collects information, fills in forms, and submits them for consolidation. But genealogy is not Wikipedia. It involves strict rules of generation, seniority, and succession.
+
+ZhiZhu's workflow:
+
+1. **Chief compiler exports a blank template** — standardized Excel or CSV with all required fields
+2. **Distribute to each branch** — branches fill in using Excel, no software installation, no new learning curve
+3. **Collect and consolidate** — the chief compiler imports all returns in one go
+4. **Automated processing** — column mapping, data transposition, person classification, relationship construction, six-dimensional deduplication, 13 validation rules, error repair — all automatic
+5. **One-click commit** — confirm and write to database
+
+The entire clan participates, but the data entry point is unified and controlled. One person operates the software, but the whole clan collaborates behind it.
 
 ---
 
